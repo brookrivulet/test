@@ -8,12 +8,12 @@
 						<view class="first">
 							<view class="first-title">
 								<view class="title-content">
-									<text>南征北战</text>
+									<text>英名永在</text>
 								</view>
 								<view class="title-content">
 									<view class="title-margin"></view>
 									<view>
-										<text>以身殉国</text>
+										<text>浩气长存</text>
 									</view>
 								</view>
 							</view>
@@ -23,14 +23,14 @@
 							<img src="@/static/images/1-2.png" alt="">
 							<view class="second-text">
 								<text>
-									彭雪枫出身中原农家，少年时赴天津、北京求学，接受马克思主义，从此投身大革命的滚滚洪流。在党的指挥下，他南征北战，先后参加了第三、四、五次反围剿，在万里长征途中，他率部攻占娄山关，直取遵义城，横渡金沙江，飞越大渡河，进军天全城，通过大草原。
+									彭雪枫将军不仅是毛泽东思想的忠实践行者，也为毛泽东思想的形成提供了重要的来源。以信仰与忠诚、爱民和为民、担当与奉献为核心内涵的雪枫精神，已经成为中国共产党宝贵的精神财富，对党的建设和人民军队建设，有着极其重要的价值。
 								</text>
 							</view>
 						</view>
 						<view class="third">
 							<view class="third-text">
 								<text>
-									抗日战争时期，彭雪枫辗转西安、太原等地，力促国共两党联合抗日，随后组织游击队伍，开辟豫皖苏抗日根据地，并创建骑兵团、《拂晓报》和拂晓剧团，为中华民族的独立解放和世界反法西斯战争的胜利，建立了不朽的功勋。
+									同时，彭雪枫将军的道德人格，也是中华民族优秀传统文化和红色革命精神的深刻体现。正如彭小枫上将所说：“在广袤的中华大地上，他已不仅仅是一名战士，一个共产党员，而是一种精神、一种信仰。”
 								</text>
 							</view>
 							<img src="@/static/images/1-3.png" alt="">
@@ -70,7 +70,7 @@
 	import"@/common/iconfont.css"
 	import musichead from "@/components/musichead/musichead.vue"
 	import { songUrl } from "@/common/api.js"
-	let _durationTimeNum = 64;
+	let _durationTimeNum = 57;
 	let status = false;
 	export default {
 		data() {
@@ -80,7 +80,7 @@
 				currentTime: "00:00",
 				durationTime: "00:00",
 				tohidde: false,
-				navtitle:'生 平 篇',
+				navtitle:'精 神 篇',
 			}
 		},
 		components: {
@@ -166,6 +166,7 @@
 					this.bgAudioMannager.onTimeUpdate(() => {
 						// 获取当前音频播放位置
 						let currentTimeNum = this.bgAudioMannager.currentTime;
+						console.log(currentTimeNum);
 						// 设置滑块值
 						if(currentTimeNum != 0){
 							this.sliderValue = currentTimeNum / _durationTimeNum  * 100;
@@ -186,7 +187,7 @@
 					// 不自动播放
 					this.bgAudioMannager.autoplay = false;
 					// 设置播放音频地址
-					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/1_shengping.mp3';
+					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/12_jingshen.mp3';
 					// console.log(this.bgAudioMannager);
 					if(status){
 						// 计算滑块值相应的时间
@@ -395,3 +396,4 @@
 		margin:0 20rpx;
 	}
 </style>
+

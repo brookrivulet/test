@@ -20,9 +20,9 @@
 <style scoped>
 	.music-head{
 		width:100%;
-		height:160rpx;
+		height:120rpx;
 		font-size:32rpx;
-		line-height:160rpx;
+		line-height:150rpx;
 		text-align:center;
 		color:black;
 		position:relative

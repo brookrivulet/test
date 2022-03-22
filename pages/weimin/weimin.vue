@@ -8,32 +8,32 @@
 						<view class="first">
 							<view class="first-title">
 								<view class="title-content">
-									<text>南征北战</text>
+									<text>心系百姓</text>
 								</view>
 								<view class="title-content">
 									<view class="title-margin"></view>
 									<view>
-										<text>以身殉国</text>
+										<text>军民情深</text>
 									</view>
 								</view>
 							</view>
-							<img src="@/static/images/1-1.png" alt="">
+							<img src="@/static/images/8-1.png" alt="">
 						</view>
 						<view class="second">
-							<img src="@/static/images/1-2.png" alt="">
+							<img src="@/static/images/8-2.png" alt="">
 							<view class="second-text">
 								<text>
-									彭雪枫出身中原农家，少年时赴天津、北京求学，接受马克思主义，从此投身大革命的滚滚洪流。在党的指挥下，他南征北战，先后参加了第三、四、五次反围剿，在万里长征途中，他率部攻占娄山关，直取遵义城，横渡金沙江，飞越大渡河，进军天全城，通过大草原。
+									彭雪枫将军除了高超的指挥艺术和过人的学识外，还有一腔深植于内心、贯穿于实践的为民情怀。彭雪枫关心百姓，爱护百姓，他所率新四军第四师，自从进入两淮，便一直被群众誉为“天下文明第一军”。
 								</text>
 							</view>
 						</view>
 						<view class="third">
 							<view class="third-text">
 								<text>
-									抗日战争时期，彭雪枫辗转西安、太原等地，力促国共两党联合抗日，随后组织游击队伍，开辟豫皖苏抗日根据地，并创建骑兵团、《拂晓报》和拂晓剧团，为中华民族的独立解放和世界反法西斯战争的胜利，建立了不朽的功勋。
+									彭雪枫常说：“离开老百姓的军队，就像鱼儿离开水一样，迟早都得涸死。”他要求部队务必坚决遵守“三大纪律八项注意”，坚决当好“政府的卫兵，人民的护兵”。因此，在豫皖苏根据地，军民关系极为融洽，人民群众为彭雪枫赠“万民伞”、“千人旗”，修“德政碑”，以古老而传统的方式，表达对他的崇敬和爱戴。
 								</text>
 							</view>
-							<img src="@/static/images/1-3.png" alt="">
+							<img src="@/static/images/8-3.png" alt="">
 						</view>
 					</view>
 				</view>
@@ -80,7 +80,7 @@
 				currentTime: "00:00",
 				durationTime: "00:00",
 				tohidde: false,
-				navtitle:'生 平 篇',
+				navtitle:'为 民 篇',
 			}
 		},
 		components: {
@@ -186,7 +186,7 @@
 					// 不自动播放
 					this.bgAudioMannager.autoplay = false;
 					// 设置播放音频地址
-					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/1_shengping.mp3';
+					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/8_weimin.mp3';
 					// console.log(this.bgAudioMannager);
 					if(status){
 						// 计算滑块值相应的时间
@@ -314,7 +314,7 @@
 	.third .third-text{
 		width: 320rpx;
 		// 添加
-		margin-top:38rpx;
+		margin-top:-10rpx;
 		// line-height:30rpx;
 		line-height:36rpx;
 		font-size: 24rpx;

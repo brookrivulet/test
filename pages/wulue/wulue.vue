@@ -8,32 +8,32 @@
 						<view class="first">
 							<view class="first-title">
 								<view class="title-content">
-									<text>南征北战</text>
+									<text>虎胆英雄</text>
 								</view>
 								<view class="title-content">
 									<view class="title-margin"></view>
 									<view>
-										<text>以身殉国</text>
+										<text>屡建奇功</text>
 									</view>
 								</view>
 							</view>
-							<img src="@/static/images/1-1.png" alt="">
+							<img src="@/static/images/5-1.png" alt="">
 						</view>
 						<view class="second">
-							<img src="@/static/images/1-2.png" alt="">
+							<img src="@/static/images/5-2.png" alt="">
 							<view class="second-text">
 								<text>
-									彭雪枫出身中原农家，少年时赴天津、北京求学，接受马克思主义，从此投身大革命的滚滚洪流。在党的指挥下，他南征北战，先后参加了第三、四、五次反围剿，在万里长征途中，他率部攻占娄山关，直取遵义城，横渡金沙江，飞越大渡河，进军天全城，通过大草原。
+									1930年7月，年仅23岁的彭雪枫率部首战长沙，初显军事才干。自此，彭雪枫在党中央的指挥下，南征北战，出生入死，迅速成长为我军以英勇善战著称的青年将领之一。
 								</text>
 							</view>
 						</view>
 						<view class="third">
 							<view class="third-text">
 								<text>
-									抗日战争时期，彭雪枫辗转西安、太原等地，力促国共两党联合抗日，随后组织游击队伍，开辟豫皖苏抗日根据地，并创建骑兵团、《拂晓报》和拂晓剧团，为中华民族的独立解放和世界反法西斯战争的胜利，建立了不朽的功勋。
+									在中央苏区的反“围剿”作战中，在万里长征途中，在开辟豫皖苏抗日根据地的斗争中，彭雪枫打过无数次险仗恶仗，立下赫赫战功，成为令敌人闻风丧胆的“虎胆将军”。
 								</text>
 							</view>
-							<img src="@/static/images/1-3.png" alt="">
+							<img src="@/static/images/5-3.png" alt="">
 						</view>
 					</view>
 				</view>
@@ -70,7 +70,7 @@
 	import"@/common/iconfont.css"
 	import musichead from "@/components/musichead/musichead.vue"
 	import { songUrl } from "@/common/api.js"
-	let _durationTimeNum = 64;
+	let _durationTimeNum = 46;
 	let status = false;
 	export default {
 		data() {
@@ -80,7 +80,7 @@
 				currentTime: "00:00",
 				durationTime: "00:00",
 				tohidde: false,
-				navtitle:'生 平 篇',
+				navtitle:'武 略 篇',
 			}
 		},
 		components: {
@@ -186,7 +186,7 @@
 					// 不自动播放
 					this.bgAudioMannager.autoplay = false;
 					// 设置播放音频地址
-					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/1_shengping.mp3';
+					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/5_wulue.mp3';
 					// console.log(this.bgAudioMannager);
 					if(status){
 						// 计算滑块值相应的时间

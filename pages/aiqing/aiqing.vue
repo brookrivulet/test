@@ -8,32 +8,32 @@
 						<view class="first">
 							<view class="first-title">
 								<view class="title-content">
-									<text>南征北战</text>
+									<text>忠诚坦白</text>
 								</view>
 								<view class="title-content">
 									<view class="title-margin"></view>
 									<view>
-										<text>以身殉国</text>
+										<text>此情不渝</text>
 									</view>
 								</view>
 							</view>
-							<img src="@/static/images/1-1.png" alt="">
+							<img src="@/static/images/10-1.png" alt="">
 						</view>
 						<view class="second">
-							<img src="@/static/images/1-2.png" alt="">
+							<img src="@/static/images/10-2.png" alt="">
 							<view class="second-text">
 								<text>
-									彭雪枫出身中原农家，少年时赴天津、北京求学，接受马克思主义，从此投身大革命的滚滚洪流。在党的指挥下，他南征北战，先后参加了第三、四、五次反围剿，在万里长征途中，他率部攻占娄山关，直取遵义城，横渡金沙江，飞越大渡河，进军天全城，通过大草原。
+									彭雪枫写给妻子林颖的书信，既是饱含浓浓亲情的战地家书，也是充满柔情蜜意的烽火情书。在信中，彭雪枫对林颖的称呼不断地变化着，如“林颖同志”“颖”“楠”“极为惦念的群”“时刻思念的琼”等，他自己曾用“红叶”“枫”“隆中友人”“寒霜丹叶”“白雪红叶”等笔名。
 								</text>
 							</view>
 						</view>
 						<view class="third">
 							<view class="third-text">
 								<text>
-									抗日战争时期，彭雪枫辗转西安、太原等地，力促国共两党联合抗日，随后组织游击队伍，开辟豫皖苏抗日根据地，并创建骑兵团、《拂晓报》和拂晓剧团，为中华民族的独立解放和世界反法西斯战争的胜利，建立了不朽的功勋。
+									彭雪枫也时常向妻子倾诉自己的思念，“抱怨”妻子的回信不够长……字里行间流露出这位虎胆将军真挚、细腻、深情的一面。这些珍贵的书信，见证了彭林二人志同道合、伉俪情深的革命爱情，也成为还原一个真实、立体的革命英雄形象的珍贵史料。
 								</text>
 							</view>
-							<img src="@/static/images/1-3.png" alt="">
+							<img src="@/static/images/10-3.png" alt="">
 						</view>
 					</view>
 				</view>
@@ -70,7 +70,7 @@
 	import"@/common/iconfont.css"
 	import musichead from "@/components/musichead/musichead.vue"
 	import { songUrl } from "@/common/api.js"
-	let _durationTimeNum = 64;
+	let _durationTimeNum = 65;
 	let status = false;
 	export default {
 		data() {
@@ -80,7 +80,7 @@
 				currentTime: "00:00",
 				durationTime: "00:00",
 				tohidde: false,
-				navtitle:'生 平 篇',
+				navtitle:'爱 情 篇',
 			}
 		},
 		components: {
@@ -186,7 +186,7 @@
 					// 不自动播放
 					this.bgAudioMannager.autoplay = false;
 					// 设置播放音频地址
-					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/1_shengping.mp3';
+					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/10_aiqing.mp3';
 					// console.log(this.bgAudioMannager);
 					if(status){
 						// 计算滑块值相应的时间
@@ -296,7 +296,7 @@
 		transform: scale(calc(10 / 11));
 		text-indent:40rpx;
 		// margin: -20rpx -24rpx;
-		margin: 30rpx -24rpx;
+		margin: 10rpx -24rpx;
 		// margin: 0rpx 10rpx 0rpx 0rpx;
 		// background-color:#F0AD4E;
 	}

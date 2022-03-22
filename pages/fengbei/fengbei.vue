@@ -8,32 +8,32 @@
 						<view class="first">
 							<view class="first-title">
 								<view class="title-content">
-									<text>南征北战</text>
+									<text>功垂祖国</text>
 								</view>
 								<view class="title-content">
 									<view class="title-margin"></view>
 									<view>
-										<text>以身殉国</text>
+										<text>泽被长淮</text>
 									</view>
 								</view>
 							</view>
-							<img src="@/static/images/1-1.png" alt="">
+							<img src="@/static/images/2-1.png" alt="">
 						</view>
 						<view class="second">
-							<img src="@/static/images/1-2.png" alt="">
+							<img src="@/static/images/2-2.png" alt="">
 							<view class="second-text">
 								<text>
-									彭雪枫出身中原农家，少年时赴天津、北京求学，接受马克思主义，从此投身大革命的滚滚洪流。在党的指挥下，他南征北战，先后参加了第三、四、五次反围剿，在万里长征途中，他率部攻占娄山关，直取遵义城，横渡金沙江，飞越大渡河，进军天全城，通过大草原。
+									彭雪枫将军的一生，是革命的一生、战斗的一生、辉煌的一生。他在中国人民解放史、中华民族反侵略史和反法西斯战争史上，都写下了光辉的一页。在他短暂而光辉的一生中，表现出了一位共产党员为国家、为人民忠贞不渝的革命精神和崇高的思想品德。“中华民族英雄”“共产党人好榜样”——毛泽东、朱德等党和国家领导人的挽联，是对彭雪枫将军光辉一生的高度评价和准确概括。
 								</text>
 							</view>
 						</view>
 						<view class="third">
 							<view class="third-text">
 								<text>
-									抗日战争时期，彭雪枫辗转西安、太原等地，力促国共两党联合抗日，随后组织游击队伍，开辟豫皖苏抗日根据地，并创建骑兵团、《拂晓报》和拂晓剧团，为中华民族的独立解放和世界反法西斯战争的胜利，建立了不朽的功勋。
+									天地英雄气，浩然壮国魂。彭雪枫将军的不朽功绩和英勇抗战的伟大精神，在皖东北、在江淮，乃至全国人民心中，树起了一座永远的丰碑，激励着一代又一代中华儿女砥砺前行。
 								</text>
 							</view>
-							<img src="@/static/images/1-3.png" alt="">
+							<img src="@/static/images/2-3.png" alt="">
 						</view>
 					</view>
 				</view>
@@ -70,7 +70,7 @@
 	import"@/common/iconfont.css"
 	import musichead from "@/components/musichead/musichead.vue"
 	import { songUrl } from "@/common/api.js"
-	let _durationTimeNum = 64;
+	let _durationTimeNum = 74;
 	let status = false;
 	export default {
 		data() {
@@ -80,7 +80,7 @@
 				currentTime: "00:00",
 				durationTime: "00:00",
 				tohidde: false,
-				navtitle:'生 平 篇',
+				navtitle:'丰 碑 篇',
 			}
 		},
 		components: {
@@ -186,7 +186,7 @@
 					// 不自动播放
 					this.bgAudioMannager.autoplay = false;
 					// 设置播放音频地址
-					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/1_shengping.mp3';
+					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/2_fengbei.mp3';
 					// console.log(this.bgAudioMannager);
 					if(status){
 						// 计算滑块值相应的时间
@@ -291,12 +291,12 @@
 	.second .second-text{
 		width: 318rpx;
 		// line-height:30rpx;
-		line-height:36rpx;
+		line-height:32rpx;
 		font-size: 24rpx;
 		transform: scale(calc(10 / 11));
 		text-indent:40rpx;
-		// margin: -20rpx -24rpx;
-		margin: 30rpx -24rpx;
+		margin: -20rpx -24rpx;
+		// margin: 30rpx -24rpx;
 		// margin: 0rpx 10rpx 0rpx 0rpx;
 		// background-color:#F0AD4E;
 	}
@@ -314,7 +314,7 @@
 	.third .third-text{
 		width: 320rpx;
 		// 添加
-		margin-top:38rpx;
+		margin-top:80rpx;
 		// line-height:30rpx;
 		line-height:36rpx;
 		font-size: 24rpx;

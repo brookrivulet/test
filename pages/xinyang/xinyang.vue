@@ -8,32 +8,32 @@
 						<view class="first">
 							<view class="first-title">
 								<view class="title-content">
-									<text>南征北战</text>
+									<text>以身许党</text>
 								</view>
 								<view class="title-content">
 									<view class="title-margin"></view>
 									<view>
-										<text>以身殉国</text>
+										<text>一世忠贞</text>
 									</view>
 								</view>
 							</view>
-							<img src="@/static/images/1-1.png" alt="">
+							<img src="@/static/images/4-1.png" alt="">
 						</view>
 						<view class="second">
-							<img src="@/static/images/1-2.png" alt="">
+							<img src="@/static/images/4-2.png" alt="">
 							<view class="second-text">
 								<text>
-									彭雪枫出身中原农家，少年时赴天津、北京求学，接受马克思主义，从此投身大革命的滚滚洪流。在党的指挥下，他南征北战，先后参加了第三、四、五次反围剿，在万里长征途中，他率部攻占娄山关，直取遵义城，横渡金沙江，飞越大渡河，进军天全城，通过大草原。
+									彭雪枫出身贫寒，少年时读书习武，养成了不畏强暴、敢于斗争的坚强性格。华北求学期间，他开始接触马克思主义，参加反帝爱国运动，并光荣加入中国共产党，在一次次生死考验和战火洗礼中，用鲜血和生命书写了一名共产党人的本色。
 								</text>
 							</view>
 						</view>
 						<view class="third">
 							<view class="third-text">
 								<text>
-									抗日战争时期，彭雪枫辗转西安、太原等地，力促国共两党联合抗日，随后组织游击队伍，开辟豫皖苏抗日根据地，并创建骑兵团、《拂晓报》和拂晓剧团，为中华民族的独立解放和世界反法西斯战争的胜利，建立了不朽的功勋。
+									纵观彭雪枫将军的一生，始终保持着对党和人民的高度忠诚。“一切都是党的、人民的，连自己的生命都是属于党和人民的”，彭雪枫将军的这句话，可谓其“以身许党 一世忠贞”的革命生涯的真实写照。
 								</text>
 							</view>
-							<img src="@/static/images/1-3.png" alt="">
+							<img src="@/static/images/4-3.png" alt="">
 						</view>
 					</view>
 				</view>
@@ -70,7 +70,7 @@
 	import"@/common/iconfont.css"
 	import musichead from "@/components/musichead/musichead.vue"
 	import { songUrl } from "@/common/api.js"
-	let _durationTimeNum = 64;
+	let _durationTimeNum = 56;
 	let status = false;
 	export default {
 		data() {
@@ -80,7 +80,7 @@
 				currentTime: "00:00",
 				durationTime: "00:00",
 				tohidde: false,
-				navtitle:'生 平 篇',
+				navtitle:'信 仰 篇',
 			}
 		},
 		components: {
@@ -186,7 +186,7 @@
 					// 不自动播放
 					this.bgAudioMannager.autoplay = false;
 					// 设置播放音频地址
-					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/1_shengping.mp3';
+					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/4_xinyang.mp3';
 					// console.log(this.bgAudioMannager);
 					if(status){
 						// 计算滑块值相应的时间

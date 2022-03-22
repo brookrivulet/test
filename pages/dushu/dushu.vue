@@ -8,32 +8,32 @@
 						<view class="first">
 							<view class="first-title">
 								<view class="title-content">
-									<text>南征北战</text>
+									<text>学以致用</text>
 								</view>
 								<view class="title-content">
 									<view class="title-margin"></view>
 									<view>
-										<text>以身殉国</text>
+										<text>必求甚解</text>
 									</view>
 								</view>
 							</view>
-							<img src="@/static/images/1-1.png" alt="">
+							<img src="@/static/images/11-1.png" alt="">
 						</view>
 						<view class="second">
-							<img src="@/static/images/1-2.png" alt="">
+							<img src="@/static/images/11-2.png" alt="">
 							<view class="second-text">
 								<text>
-									彭雪枫出身中原农家，少年时赴天津、北京求学，接受马克思主义，从此投身大革命的滚滚洪流。在党的指挥下，他南征北战，先后参加了第三、四、五次反围剿，在万里长征途中，他率部攻占娄山关，直取遵义城，横渡金沙江，飞越大渡河，进军天全城，通过大草原。
+									彭雪枫酷爱读书，他的座右铭是“读书必求甚解”，他的格言是“学以致用”。在繁忙的军务和公务之余，他刻苦学习，如饥似渴地汲取知识的营养，努力提高指挥艺术、理论修养和文化水平。
 								</text>
 							</view>
 						</view>
 						<view class="third">
 							<view class="third-text">
 								<text>
-									抗日战争时期，彭雪枫辗转西安、太原等地，力促国共两党联合抗日，随后组织游击队伍，开辟豫皖苏抗日根据地，并创建骑兵团、《拂晓报》和拂晓剧团，为中华民族的独立解放和世界反法西斯战争的胜利，建立了不朽的功勋。
+									在与妻子林颖的书信中，彭雪枫经常向林颖讲述自己近期的读书情况，也鼓励林颖多读书，教她读书的方法。彭雪枫的读书生活，留下了许多感人至深的故事，充分展现了一位杰出的共产党人的精神追求和高尚情怀，对当代青少年的读书学习也有着积极的借鉴意义。
 								</text>
 							</view>
-							<img src="@/static/images/1-3.png" alt="">
+							<img src="@/static/images/11-3.png" alt="">
 						</view>
 					</view>
 				</view>
@@ -70,7 +70,7 @@
 	import"@/common/iconfont.css"
 	import musichead from "@/components/musichead/musichead.vue"
 	import { songUrl } from "@/common/api.js"
-	let _durationTimeNum = 64;
+	let _durationTimeNum = 53;
 	let status = false;
 	export default {
 		data() {
@@ -80,7 +80,7 @@
 				currentTime: "00:00",
 				durationTime: "00:00",
 				tohidde: false,
-				navtitle:'生 平 篇',
+				navtitle:'读 书 篇',
 			}
 		},
 		components: {
@@ -166,6 +166,7 @@
 					this.bgAudioMannager.onTimeUpdate(() => {
 						// 获取当前音频播放位置
 						let currentTimeNum = this.bgAudioMannager.currentTime;
+						console.log(currentTimeNum);
 						// 设置滑块值
 						if(currentTimeNum != 0){
 							this.sliderValue = currentTimeNum / _durationTimeNum  * 100;
@@ -186,7 +187,7 @@
 					// 不自动播放
 					this.bgAudioMannager.autoplay = false;
 					// 设置播放音频地址
-					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/1_shengping.mp3';
+					this.bgAudioMannager.src = 'http://project.xianyiculture.com/audio_guide/mp3/11_dushu.mp3';
 					// console.log(this.bgAudioMannager);
 					if(status){
 						// 计算滑块值相应的时间
